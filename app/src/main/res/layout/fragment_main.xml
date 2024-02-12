@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_degradado">
+
+    <!-- TextView (20%) -->
+    <TextView
+        android:id="@+id/textViewBienvenida"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="@string/BienvenidaApp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:fontFamily="@font/fuentemensaje"
+        />
+
+    <!-- ImageView (40%) -->
+
+
+    <!-- EditText (20%) -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="4"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/logotipo" />
+
+    <EditText
+        android:id="@+id/RecogidaUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:hint="Usuario"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Button (20%) -->
+    <Button
+        android:id="@+id/BotonIniciarSesion"
+        style="@style/EstiloBoton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="2"
+        android:text="@string/IniciarSesion" />
+
+</LinearLayout>

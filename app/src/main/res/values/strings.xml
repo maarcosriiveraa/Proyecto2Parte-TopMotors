@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">TopMotorsApp</string>
+    <string name="BienvenidaApp">TopMotor, te da la bienvenida a la mejor APP del Motor</string>
+    <string name="IniciarSesion">Iniciar Sesión</string>
+    <string name="BienvenidaUsuario"> %s,estas usando la versión 1 de TopMotors</string>
+    <string name="Descripción">Bienvenido a la mejor App del motor, esta App te permitirá aprender muchos aspectos sobre el motor
+    como, marcas de coches, modelos, motorizaciones etc, esta App te permitira subir con total libertad opiniones sobre coches, motos etc
+    para que usuarios como tu puedan informarse y ver las opiniones de esos vehiculos.Se trata de la mejor red Social para amantes del motor</string>
+    <string name="BotonContacto">Contactar</string>
+    <string name="ListaElementosTipo">Marcas de coches</string>
+    <string name="AgFav">Agregar a Favoritos</string>
+    <string name="coche">Marca</string>
+    <string name="Motor">Motor</string>
+    <string name="Potencia">Potencia</string>
+    <string name="Modelo">Modelo</string>
+    <string name="navegar">Navegar por TopMotors</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textobienvenida">Bienvenido a TopMotors, %s!! </string>
+    <string name="vercoches">VER COCHES</string>
+    <string name="SalirApp">SALIR</string>
+    <string name="Credits">CREDITOS</string>
+    <string name="InfoUsu">INF. USUARIO</string>
+    <string name="FragIteminfo">Mclaren 720s</string>
+    <string name="FAVORITOS">FAVORITOS</string>
+    <string name="Mclaren">Mclaren 720s Coupé</string>
+    <string name="PotenciaCV">720 PS | 710bhp | 720CV</string>
+    <string name="VelocidadMax">212mph | 341 km/h</string>
+    <string name="newton">568 lb-ft | 770 Nm </string>
+    <string name="peso_coche">2829lb | 1283 Kg</string>
+    <string name="consumo_coche">Urbano: 17,2 L | Extraurbano: 38,4 L | Mixto: 26,6 L</string>
+    <string name="datosusu">DATOS DEL USUARIO</string>
+    <string name="usuactual">Usuario Actual: %s</string>
+    <string name="NacApp">LA APP HA SIDO DISEÑADA EN ESPAÑA</string>
+    <string name="desarrollador">EL DESARROLLADOR ES MARCOS RIVERA OREAL</string>
+    <string name="categoria">LA CATEGORIA DE LA APP ES MOTOR</string>
+    <string name="publico">LA APP ESTA DIRIGIDA A TODO TIPO DE PUBLICOS</string>
+    <string name="RRSS">TWITTER | X: @TopMotorsAppOfficial</string>
+    <string name="Ig">INSTAGRAM: @TopMotorsAppOffical</string>
+    <string name="comenzar">COMENZAR</string>
+</resources>

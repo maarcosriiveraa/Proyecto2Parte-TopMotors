@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.proyecto_2trim_topmotors.Fragmentos.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/creditFragment"
+        android:name="com.example.proyecto_2trim_topmotors.Fragmentos.CreditFragment"
+        android:label="CreditFragment"
+        tools:layout="@layout/fragment_credit">
+        <action
+            android:id="@+id/action_creditFragment_to_loginFragment"
+            app:popUpTo="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.proyecto_2trim_topmotors.Fragmentos.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu2">
+        <action
+            android:id="@+id/action_menuFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_creditFragment"
+            app:destination="@id/creditFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_detailItemFragment"
+            app:destination="@id/detailItemFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_favItemListFragment2"
+            app:destination="@id/favItemListFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_itemListFragment2"
+            app:destination="@id/itemListFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailItemFragment"
+        android:name="DetailItemFragment"
+        android:label="DetailItemFragment"
+        tools:layout="@layout/fragment_detail_item"
+        />
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.example.proyecto_2trim_topmotors.Fragmentos.UserInfoFragment"
+        android:label="UserInfoFragment"
+        tools:layout="@layout/fragment_user_info"/>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="ViewPagerFragment"
+        android:label="ViewPagerFragment" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favItemListFragment"
+        android:name="FavItemListFragment"
+        android:label="FavItemListFragment" />
+    <fragment
+        android:id="@+id/itemListFragment2"
+        android:name="ItemListFragment"
+        android:label="ItemListFragment" />
+</navigation>
