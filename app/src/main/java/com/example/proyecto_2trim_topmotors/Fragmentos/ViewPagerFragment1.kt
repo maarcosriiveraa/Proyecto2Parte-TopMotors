@@ -3,6 +3,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.proyecto_2trim_topmotors.databinding.ActivityMainBinding
 import com.example.proyecto_2trim_topmotors.databinding.FragmentViewPager1Binding
 
 class ViewPagerFragment1 : Fragment() {
@@ -15,6 +16,11 @@ class ViewPagerFragment1 : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentViewPager1Binding.inflate(inflater, container, false)
+
+
+        // Hacer el BottomNavigationView invisible
+
+
         return binding.root
     }
 

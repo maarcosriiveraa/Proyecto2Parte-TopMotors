@@ -1,23 +1,23 @@
 <resources>
-    <string name="app_name">TopMotorsApp</string>
-    <string name="BienvenidaApp">TopMotor, te da la bienvenida a la mejor APP del Motor</string>
-    <string name="IniciarSesion">Iniciar Sesión</string>
-    <string name="BienvenidaUsuario"> %s,estas usando la versión 1 de TopMotors</string>
-    <string name="Descripción">Bienvenido a la mejor App del motor, esta App te permitirá aprender muchos aspectos sobre el motor
+    <string name="app_name" translatable="false">TopMotorsApp</string>
+    <string name="BienvenidaApp" translatable="false">TopMotor, te da la bienvenida a la mejor APP del Motor</string>
+    <string name="IniciarSesion" translatable="false">Iniciar Sesión</string>
+    <string name="BienvenidaUsuario" translatable="false"> %s,estas usando la versión 1 de TopMotors</string>
+    <string name="Descripción" translatable="false">Bienvenido a la mejor App del motor, esta App te permitirá aprender muchos aspectos sobre el motor
     como, marcas de coches, modelos, motorizaciones etc, esta App te permitira subir con total libertad opiniones sobre coches, motos etc
     para que usuarios como tu puedan informarse y ver las opiniones de esos vehiculos.Se trata de la mejor red Social para amantes del motor</string>
-    <string name="BotonContacto">Contactar</string>
-    <string name="ListaElementosTipo">Marcas de coches</string>
-    <string name="AgFav">Agregar a Favoritos</string>
-    <string name="coche">Marca</string>
-    <string name="Motor">Motor</string>
-    <string name="Potencia">Potencia</string>
-    <string name="Modelo">Modelo</string>
-    <string name="navegar">Navegar por TopMotors</string>
+    <string name="BotonContacto" translatable="false">Contactar</string>
+    <string name="ListaElementosTipo" translatable="false">Marcas de coches</string>
+    <string name="AgFav" translatable="false">Agregar a Favoritos</string>
+    <string name="coche" translatable="false">Marca</string>
+    <string name="Motor" translatable="false">Motor</string>
+    <string name="Potencia" translatable="false">Potencia</string>
+    <string name="Modelo" translatable="false">Modelo</string>
+    <string name="navegar" translatable="false">Navegar por TopMotors</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="textobienvenida">Bienvenido a TopMotors, %s!! </string>
-    <string name="vercoches">VER COCHES</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="textobienvenida" translatable="false">Bienvenido a TopMotors, %s!! </string>
+    <string name="vercoches" translatable="false">VER COCHES</string>
     <string name="SalirApp">SALIR</string>
     <string name="Credits">CREDITOS</string>
     <string name="InfoUsu">INF. USUARIO</string>
@@ -38,4 +38,7 @@
     <string name="RRSS">TWITTER | X: @TopMotorsAppOfficial</string>
     <string name="Ig">INSTAGRAM: @TopMotorsAppOffical</string>
     <string name="comenzar">COMENZAR</string>
+    <string name="Descubrir" translatable="false">DESCUBRIR</string>
+    <string name="PERSONAL" translatable="false">INF. PERSONAL</string>
+    <string name="home" translatable="false">INICIO</string>
 </resources>

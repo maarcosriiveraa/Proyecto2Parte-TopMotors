@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TopMotorsApp</string>
+    <string name="BienvenidaApp">TopMotor welcomes you to the best Motor APP</string>
+    <string name="IniciarSesion">Log in</string>
+    <string name="BienvenidaUsuario">Welcome, %s, you are using version 1 of TopMotors</string>
+    <string name="Descripción">Welcome to the best Motor App, this App will allow you to learn many aspects about the motor
+    such as car brands, models, engines etc, this App will allow you to freely upload opinions about cars, motorcycles etc
+    so that users like you can inform themselves and see the opinions of those vehicles. It is the best Social Network for motor lovers</string>
+    <string name="BotonContacto">Contact</string>
+    <string name="ListaElementosTipo">Car Brands</string>
+    <string name="AgFav">Add to Favorites</string>
+    <string name="coche">Brand</string>
+    <string name="Motor">Engine</string>
+    <string name="Potencia">Power</string>
+    <string name="Modelo">Model</string>
+    <string name="navegar">Browse TopMotors</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textobienvenida">Welcome to TopMotors, %s!! </string>
+    <string name="vercoches">SEE CARS</string>
+    <string name="SalirApp">EXIT</string>
+    <string name="Credits">CREDITS</string>
+    <string name="InfoUsu">USER INFO</string>
+    <string name="FragIteminfo">Mclaren 720s</string>
+    <string name="FAVORITOS">FAVORITES</string>
+    <string name="Mclaren">Mclaren 720s Coupé</string>
+    <string name="PotenciaCV">720 PS | 710bhp | 720CV</string>
+    <string name="VelocidadMax">212mph | 341 km/h</string>
+    <string name="newton">568 lb-ft | 770 Nm </string>
+    <string name="peso_coche">2829lb | 1283 Kg</string>
+    <string name="consumo_coche">Urban: 17.2 L | Extra Urban: 38.4 L | Combined: 26.6 L</string>
+    <string name="datosusu">USER DATA</string>
+    <string name="usuactual">Current User: %s</string>
+    <string name="NacApp">THE APP HAS BEEN DESIGNED IN SPAIN</string>
+    <string name="desarrollador">THE DEVELOPER IS MARCOS RIVERA OREAL</string>
+    <string name="categoria">THE APP CATEGORY IS MOTOR</string>
+    <string name="publico">THE APP IS AIMED AT ALL TYPES OF AUDIENCES</string>
+    <string name="RRSS">TWITTER | X: @TopMotorsAppOfficial</string>
+    <string name="Ig">INSTAGRAM: @TopMotorsAppOffical</string>
+    <string name="comenzar">START</string>
+    <string name="Descubrir">DISCOVER</string>
+    <string name="PERSONAL">PERSONAL INFO</string>
+    <string name="home">HOME</string>
+</resources>

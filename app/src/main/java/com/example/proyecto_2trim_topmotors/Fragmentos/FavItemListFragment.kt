@@ -4,9 +4,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto_2trim_topmotors.Coche
+import com.example.proyecto_2trim_topmotors.R
 import com.example.proyecto_2trim_topmotors.databinding.FragmentFavItemListBinding
 
 class FavItemListFragment : Fragment() {
@@ -34,9 +36,7 @@ class FavItemListFragment : Fragment() {
         }
 
         // Configurar el OnClickListener para el botón de eliminar
-        binding.btnEliminar.setOnClickListener {
-            eliminarElementoSeleccionado()
-        }
+
 
         return binding.root
     }
@@ -65,6 +65,7 @@ class FavItemListFragment : Fragment() {
             adapter.notifyItemRemoved(posicionAEliminar)
         }
     }
+
 
     private fun obtenerPosicionAEliminar(): Int = 0
 

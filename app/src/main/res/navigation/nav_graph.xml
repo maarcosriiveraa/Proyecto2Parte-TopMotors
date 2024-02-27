@@ -35,9 +35,6 @@
             android:id="@+id/action_menuFragment_to_creditFragment"
             app:destination="@id/creditFragment" />
         <action
-            android:id="@+id/action_menuFragment_to_detailItemFragment"
-            app:destination="@id/detailItemFragment" />
-        <action
             android:id="@+id/action_menuFragment_to_userInfoFragment"
             app:destination="@id/userInfoFragment" />
         <action
@@ -46,6 +43,9 @@
         <action
             android:id="@+id/action_menuFragment_to_itemListFragment2"
             app:destination="@id/itemListFragment2" />
+        <action
+            android:id="@+id/action_menuFragment_to_detailItemFragment"
+            app:destination="@id/detailItemFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailItemFragment"
@@ -57,7 +57,14 @@
         android:id="@+id/userInfoFragment"
         android:name="com.example.proyecto_2trim_topmotors.Fragmentos.UserInfoFragment"
         android:label="UserInfoFragment"
-        tools:layout="@layout/fragment_user_info"/>
+        tools:layout="@layout/fragment_user_info">
+        <action
+            android:id="@+id/action_userInfoFragment_to_itemListFragment2"
+            app:destination="@id/itemListFragment2" />
+        <action
+            android:id="@+id/action_userInfoFragment_to_favItemListFragment"
+            app:destination="@id/favItemListFragment" />
+    </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
         android:name="ViewPagerFragment"
@@ -69,9 +76,30 @@
     <fragment
         android:id="@+id/favItemListFragment"
         android:name="FavItemListFragment"
-        android:label="FavItemListFragment" />
+        android:label="FavItemListFragment" >
+        <action
+            android:id="@+id/action_favItemListFragment_to_itemListFragment2"
+            app:destination="@id/itemListFragment2" />
+        <action
+            android:id="@+id/action_favItemListFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/itemListFragment2"
         android:name="ItemListFragment"
-        android:label="ItemListFragment" />
+        android:label="ItemListFragment" >
+        <action
+            android:id="@+id/action_itemListFragment2_to_favItemListFragment"
+            app:destination="@id/favItemListFragment" />
+        <action
+            android:id="@+id/action_itemListFragment2_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+        <action
+            android:id="@+id/action_itemListFragment2_to_detailItemFragment"
+            app:destination="@id/detailItemFragment"/>
+
+    </fragment>
+
+
+
 </navigation>

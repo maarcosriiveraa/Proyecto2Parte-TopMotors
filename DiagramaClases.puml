@@ -1,0 +1,180 @@
+@startuml
+class ItemListFragment {
+- SharedViewModel sharedViewModel
+- SharedPreferences sharedPreferences
+- FragmentItemListBinding? _binding
+-  binding
+- Boolean isFirstTime
+- NavController navController
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onResume()
+- void iniciarRecyclerView()
+- void guardarElementosSeleccionados()
++ void onDestroyView()
+}
+
+
+class ViewPagerAdapter {
++ Int getItemCount()
++ Fragment createFragment(Int)
+}
+
+class FavItemListFragment {
+- SharedViewModel sharedViewModel
+- FragmentFavItemListBinding? _binding
+-  binding
+- CocheAdapter adapter
+-  favoritosList
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
+- void iniciarRecyclerView()
+- void agregarFavoritos(List<Coche>)
+- void eliminarElementoSeleccionado()
+- Int obtenerPosicionAEliminar()
++ void onDestroyView()
+}
+
+
+class CocheAdapter {
+-  selectedCoches
++ List<Coche> getSelectedCoches()
++ cocheViewHolder onCreateViewHolder(ViewGroup,Int)
++ Int getItemCount()
++ void onBindViewHolder(cocheViewHolder,Int)
+}
+
+
+class ViewPagerFragment {
+- FragmentViewPagerBinding? _binding
+-  binding
+- ActivityMainBinding? _binding2
+-  binding2
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onDestroyView()
+}
+
+
+class DetailItemFragment {
+- FragmentDetailItemBinding? _binding
+-  binding
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onDestroyView()
+- void initializeYouTubePlayer(String)
+- String getYouTubeVideoId(String)
+}
+
+
+class com.example.proyecto_2trim_topmotors.Fragmentos.MenuFragment {
+- FragmentMenu2Binding? _binding
+-  binding
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onDestroyView()
+}
+
+
+class com.example.proyecto_2trim_topmotors.Fragmentos.FragmentMain {
++ void onCreate(Bundle?)
++ View? onCreateView(LayoutInflater,ViewGroup?,Bundle?)
+}
+
+class com.example.proyecto_2trim_topmotors.Fragmentos.DetailFavItemFragment {
++ void onCreate(Bundle?)
++ View? onCreateView(LayoutInflater,ViewGroup?,Bundle?)
+}
+
+class com.example.proyecto_2trim_topmotors.Actividades.SplashActivity {
++ void onCreate(Bundle?)
+}
+
+class com.example.proyecto_2trim_topmotors.Fragmentos.UserInfoFragment {
+- FragmentUserInfoBinding? _binding
+-  binding
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onResume()
++ void onDestroyView()
+}
+
+
+class com.example.proyecto_2trim_topmotors.CocheProvider$Companion {
++  listaCoches
+}
+
+class com.example.proyecto_2trim_topmotors.CocheProvider {
+}
+class com.example.proyecto_2trim_topmotors.Coche {
+}
+class SharedViewModel {
++  elementosSeleccionados
+}
+
+class com.example.proyecto_2trim_topmotors.Adapter.cocheViewHolder {
++  binding
++ void render(Coche)
+}
+
+
+class com.example.proyecto_2trim_topmotors.Fragmentos.CreditFragment {
+- FragmentCreditBinding? _binding
+-  binding
++ void onCreateView(void,LayoutInflater,ViewGroup?,void,Bundle?)
++ void null()
++ void onDestroyView()
+- void enviarCorreo()
+}
+
+
+class ViewPagerFragment1 {
+- FragmentViewPager1Binding? _binding
+-  binding
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onDestroyView()
+}
+
+
+class ViewPagerFragment2 {
+- FragmentViewPager2Binding? _binding
+-  binding
+- VideoView videoView
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onViewCreated(View,Bundle?)
++ void onDestroyView()
+}
+
+
+class com.example.proyecto_2trim_topmotors.Fragmentos.LoginFragment {
+- FragmentLoginBinding? _binding
+-  binding
++ View onCreateView(LayoutInflater,ViewGroup?,Bundle?)
++ void onDestroyView()
+- void languageMode()
+}
+
+
+class com.example.proyecto_2trim_topmotors.Actividades.MainActivity {
+- ActivityMainBinding binding
++ void onCreate(Bundle?)
++ Boolean onSupportNavigateUp()
+}
+
+
+
+
+androidx.fragment.app.Fragment <|-- ItemListFragment
+androidx.viewpager2.adapter.FragmentStateAdapter <|-- ViewPagerAdapter
+androidx.fragment.app.Fragment <|-- FavItemListFragment
+Adapter <|-- CocheAdapter
+androidx.fragment.app.Fragment <|-- ViewPagerFragment
+androidx.fragment.app.Fragment <|-- DetailItemFragment
+androidx.fragment.app.Fragment <|-- com.example.proyecto_2trim_topmotors.Fragmentos.MenuFragment
+androidx.fragment.app.Fragment <|-- com.example.proyecto_2trim_topmotors.Fragmentos.FragmentMain
+androidx.fragment.app.Fragment <|-- com.example.proyecto_2trim_topmotors.Fragmentos.DetailFavItemFragment
+androidx.appcompat.app.AppCompatActivity <|-- com.example.proyecto_2trim_topmotors.Actividades.SplashActivity
+androidx.fragment.app.Fragment <|-- com.example.proyecto_2trim_topmotors.Fragmentos.UserInfoFragment
+com.example.proyecto_2trim_topmotors.CocheProvider +.. com.example.proyecto_2trim_topmotors.CocheProvider$Companion
+androidx.lifecycle.ViewModel <|-- SharedViewModel
+com.example.proyecto_2trim_topmotors.Adapter.ViewHolder <|-- com.example.proyecto_2trim_topmotors.Adapter.cocheViewHolder
+androidx.fragment.app.Fragment <|-- com.example.proyecto_2trim_topmotors.Fragmentos.CreditFragment
+androidx.fragment.app.Fragment <|-- ViewPagerFragment1
+androidx.fragment.app.Fragment <|-- ViewPagerFragment2
+androidx.fragment.app.Fragment <|-- com.example.proyecto_2trim_topmotors.Fragmentos.LoginFragment
+androidx.appcompat.app.AppCompatActivity <|-- com.example.proyecto_2trim_topmotors.Actividades.MainActivity
+@enduml

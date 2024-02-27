@@ -1,5 +1,4 @@
 package com.example.proyecto_2trim_topmotors.Actividades
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

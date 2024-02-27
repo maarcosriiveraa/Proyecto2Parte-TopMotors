@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -41,6 +42,7 @@ android {
 dependencies {
 
     val nav_version = "2.5.3"
+    implementation ("com.pierfrancescosoffritti.androidyoutubeplayer:core:11.0.0")
     implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation ("com.squareup.picasso:picasso:2.71828")
     implementation("androidx.cardview:cardview:1.0.0")

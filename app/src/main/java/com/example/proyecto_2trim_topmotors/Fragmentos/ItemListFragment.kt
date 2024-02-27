@@ -4,10 +4,15 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.proyecto_2trim_topmotors.CocheProvider
+import com.example.proyecto_2trim_topmotors.R
 import com.example.proyecto_2trim_topmotors.databinding.FragmentItemListBinding
 
 class ItemListFragment : Fragment() {
@@ -19,6 +24,8 @@ class ItemListFragment : Fragment() {
     private var isFirstTime: Boolean
         get() = sharedPreferences.getBoolean("isFirstTime", true)
         set(value) = sharedPreferences.edit().putBoolean("isFirstTime", value).apply()
+
+    private lateinit var navController: NavController
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,6 +39,12 @@ class ItemListFragment : Fragment() {
             isFirstTime = false
         }
 
+        // Obtener el NavController
+        navController = findNavController()
+
+        // Configurar BottomNavigationView con NavController
+
+
         binding.btnfavorito.setOnClickListener {
             guardarElementosSeleccionados()
         }
@@ -40,6 +53,15 @@ class ItemListFragment : Fragment() {
         iniciarRecyclerView()
 
         return binding.root
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        val message = "Lista SuperCoches"
+        val duration = Toast.LENGTH_SHORT
+        val context = requireContext().applicationContext
+        Toast.makeText(context, message, duration).show()
     }
 
     private fun iniciarRecyclerView() {
